@@ -64,7 +64,7 @@ define(["require", "exports"], function (require, exports) {
         };
         __decorate([
             mz.MVCObject.proxy, 
-            __metadata('design:type', Object)
+            __metadata('design:type', mz.Collection)
         ], IonSelect.prototype, "list");
         IonSelect = __decorate([
             mz.Widget.RegisterComponent("ion-select"),
