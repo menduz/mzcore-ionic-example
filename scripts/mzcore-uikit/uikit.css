@@ -1,0 +1,21 @@
+﻿[hidden], .mz-hidden {
+	display: none !important;
+}
+
+.mz-fit {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+mz-scroller {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}

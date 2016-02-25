@@ -1,0 +1,27 @@
+<div>
+    <div class="bar" style="border:none; background: transparent">
+        <menu-button />
+        <h1 class="title">Please sign in</h1>
+    </div>
+    
+    <mz-scroller class="has-header">
+        <div class="list">
+            <label class="item item-input" style="border:none; background: transparent">
+              <span class="input-label">Username</span>
+              <input type="text" mz-model="user.username" />
+            </label>
+            <label class="item item-input" style="border:none; background: transparent">
+              <span class="input-label">Password</span>
+              <input type="password" mz-model="user.password" />
+            </label>
+          </div>
+          <div class="padding">
+            <button class="button button-block button-positive"  onclick="{this.showModal}">
+              Sign-In
+            </button>
+            <p class="text-center">
+              <a onclick="{this.showModal}">Forgot password</a>
+            </p>
+          </div>
+        </mz-scroller>
+</div>
