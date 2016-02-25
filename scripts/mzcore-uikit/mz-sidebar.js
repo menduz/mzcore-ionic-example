@@ -13,7 +13,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 define(["require", "exports"], function (require, exports) {
-    mz.loadCss(module.getPath('./mz-uikit.css'));
+    mz.loadCss(module.getPath('./uikit.css'));
     function activatePlugin() { }
     exports.activatePlugin = activatePlugin;
     var sidebarList = [];

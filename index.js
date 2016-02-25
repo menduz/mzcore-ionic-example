@@ -17,7 +17,6 @@ define(["require", "exports", 'scripts/mzcore-ionic/components', 'scripts/mzcore
     uikit.activatePlugin();
     ionic.activatePlugin();
     mz.alias('views', 'views');
-    ;
     var App = (function (_super) {
         __extends(App, _super);
         function App() {

@@ -8,7 +8,7 @@ menuButton.activatePlugin();
 uikit.activatePlugin();
 ionic.activatePlugin();
 
-mz.alias('views', 'views'));
+mz.alias('views', 'views');
 
 
 

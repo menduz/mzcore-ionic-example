@@ -1,4 +1,4 @@
-mz.loadCss(module.getPath('./mz-uikit.css'));
+mz.loadCss(module.getPath('./uikit.css'));
 
 export function activatePlugin() { }
 
