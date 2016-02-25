@@ -23,5 +23,5 @@
               <a onclick="{this.showModal}">Forgot password</a>
             </p>
           </div>
-        </mz-scroller>
+        </mz-scroller> 
 </div>
