@@ -1,0 +1,8 @@
+<div>
+
+    <a class="button icon-left ion-chevron-left button-clear button-dark" onclick="{this.back}">Back</a>
+
+    <div>
+        Sample content
+    </div>
+</div>

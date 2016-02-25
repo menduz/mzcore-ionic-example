@@ -1,0 +1,10 @@
+.mz-sidebar {
+    background: white;
+    border-right: 1px solid #eee;
+}
+
+.white-text { color: white!important}
+.menu-item { 
+    border: none!important;
+    border-right: 1px solid #eee!important; 
+}

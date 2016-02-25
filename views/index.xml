@@ -1,0 +1,18 @@
+<div class="page">
+    <mz-sidebar panel=".main-app" name="menu" class="mz-sidebar">
+        <ul class="list">
+            <a href="#" class="menu-item item { 'positive-bg white-text': this.actualPageName == 'index' }" onclick="{this.closeMenu}">
+                Home
+            </a>
+            <a href="#account" class="menu-item item { 'positive-bg white-text': this.actualPageName == 'login' }" onclick="{this.closeMenu}">
+                Account
+            </a>
+            <a href="#about" class="menu-item item { 'positive-bg white-text': this.actualPageName == 'about' }" onclick="{this.closeMenu}">
+                About
+            </a>
+        </ul>
+    </mz-sidebar>
+    <content class="mz-fit main-app"  visible="{!this.loadingPage}">
+        <!-- here goes the content -->
+    </content>
+</div>
