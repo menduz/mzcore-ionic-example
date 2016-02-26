@@ -18,6 +18,9 @@ define(["require", "exports"], function (require, exports) {
         function IndexPage() {
             _super.apply(this, arguments);
         }
+        IndexPage.prototype.componentInitialized = function () {
+            $('body').css("background", "#fff");
+        };
         IndexPage = __decorate([
             IndexPage.Template('@views/modules/index.xml'), 
             __metadata('design:paramtypes', [])
