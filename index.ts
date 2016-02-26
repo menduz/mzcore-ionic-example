@@ -2,7 +2,7 @@
 
 import ionic = require('scripts/mzcore-ionic/components');
 import uikit = require('scripts/mzcore-uikit/index');
-import menuButton = require('components/MenuButton'); 
+import menuButton = require('components/MenuButton');
 
 menuButton.activatePlugin();
 uikit.activatePlugin();
@@ -18,11 +18,32 @@ class App extends mz.app.PageCoordinator {
 
     constructor() {
         super({
-            pages: 'pages.json'
+            pages: /* 'pages.json' */[
+                {
+                    "name": "index",
+                    "module": "modules/index",
+                    "routes": {
+                        "": "index"
+                    }
+                }, {
+                    "name": "login",
+                    "module": "modules/login",
+                    "routes": {
+                        "account/logout": "logout",
+                        "account": "login"
+                    }
+                }, {
+                    "name": "about",
+                    "module": "modules/about",
+                    "routes": {
+                        "about": "about"
+                    }
+                }
+            ]
         });
     }
-    
-    closeMenu(){
+
+    closeMenu() {
         this.menu.opened = false;
     }
 }

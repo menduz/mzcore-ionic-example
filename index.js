@@ -21,7 +21,28 @@ define(["require", "exports", 'scripts/mzcore-ionic/components', 'scripts/mzcore
         __extends(App, _super);
         function App() {
             _super.call(this, {
-                pages: 'pages.json'
+                pages: [
+                    {
+                        "name": "index",
+                        "module": "modules/index",
+                        "routes": {
+                            "": "index"
+                        }
+                    }, {
+                        "name": "login",
+                        "module": "modules/login",
+                        "routes": {
+                            "account/logout": "logout",
+                            "account": "login"
+                        }
+                    }, {
+                        "name": "about",
+                        "module": "modules/about",
+                        "routes": {
+                            "about": "about"
+                        }
+                    }
+                ]
             });
         }
         App.prototype.closeMenu = function () {
